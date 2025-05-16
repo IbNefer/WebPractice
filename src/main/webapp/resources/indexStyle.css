@@ -1,0 +1,126 @@
+body {
+    padding-bottom: 80px;
+}
+
+/* Header Styles */
+.header-container {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.header-buttons a {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.header-buttons button {
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+
+.btn-donar {
+    background-color: #007ad9;
+}
+
+.btn-comprar {
+    background-color: #28a745;
+}
+
+.btn-login {
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Main Container */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Paragraph + Image Section */
+.image-section {
+    position: relative;
+    flex: 1 1 60%;
+    width: 100%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+/* Comprar y Donar Sections */
+.sections-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.section-comprar, .section-donar {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 35%;
+}
+
+.section-comprar {
+    background-color: #f7f7f7;
+    width: 60%;
+}
+
+.section-donar {
+    background-color: #fff3e0;
+    width: 40%;
+}
+
+.section-comprar p, .section-donar p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>PrimeFaces Input Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</h:head>
+<h:body>
+    <div class="card">
+        <h:form>
+            <p:messages id="messages" showDetail="true" />
+            <h:panelGrid columns="2" cellpadding="7" styleClass="mb-3">
+                <p:outputLabel for="name" value="Given Name:"/>
+                <p:inputText id="name" value="#{signup.name}" required="true" label="name"/>
+                
+                <p:outputLabel for="surname" value="Surname:"/>
+                <p:inputText id="surname" value="#{signup.surname}" required="true" label="surname"/>
+                
+                <p:outputLabel for="age" value="Age:"/>
+                <p:inputText id="age" value="#{signup.age}" required="true" label="age" type="number"/>
+                
+                <p:outputLabel for="email" value="Email:"/>
+                <p:inputText id="email" value="#{signup.email}" required="true" label="email"/>
+                
+                  <p:outputLabel for="password" value="Password:"/>
+                <p:password id="password" value="#{signup.password}" required="true" label="password"/>
+                
+                <p:outputLabel for="confirm" value="Confirm Password:"/>
+                <p:password id="confirm" value="#{signup.confirmPassword}" required="true" label="confirm password"/>
+            </h:panelGrid>
+            <p:commandButton value="Save" ajax="false" icon="pi pi-check"
+                 action="#{signup.save}" />
+        </h:form>
+    </div>
+</h:body>
+</html>
